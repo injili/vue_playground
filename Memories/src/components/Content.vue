@@ -113,4 +113,18 @@ export default {
     };
   },
 };
+
+import { ref } from "vue";
+import {
+  Dialog,
+  DialogPanel,
+  DialogTitle,
+  DialogDescription,
+} from "@headlessui/vue";
+
+const isOpen = ref(true);
+
+function setIsOpen(value) {
+  isOpen.value = value;
+}
 </script>
