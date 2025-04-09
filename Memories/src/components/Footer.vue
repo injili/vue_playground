@@ -1,1 +1,1 @@
-<template>Footer</template>
+<template></template>
