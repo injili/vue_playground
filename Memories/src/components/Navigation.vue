@@ -39,7 +39,9 @@ export default {
         v-else-if="route.name === 'Family'"
         class="font-semibold text-lg text-blue-950"
       >
-        Family Name
+        <button @click="() => $router.push('/familyprofile')">
+          Family Name
+        </button>
       </h2>
       <h2
         v-else-if="route.name === 'FamilyProfile'"
