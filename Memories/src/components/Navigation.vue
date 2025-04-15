@@ -93,11 +93,13 @@ export default {
         />
       </div>
       <div v-else-if="route.name === 'Home'">
-        <img
-          :src="persons.pers5"
-          alt=""
-          class="hover:scale-120 transition-transform duration-500 z-0 w-12 h-12 rounded-full"
-        />
+        <button @click="() => $router.push('/profile')">
+          <img
+            :src="persons.pers5"
+            alt=""
+            class="hover:scale-120 transition-transform duration-500 z-0 w-12 h-12 rounded-full"
+          />
+        </button>
       </div>
     </nav>
   </div>
