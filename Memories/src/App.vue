@@ -1,6 +1,5 @@
 <script setup>
 import Nav from "./components/Navigation.vue";
-import Content from "./components/Content.vue";
 import Footer from "./components/Footer.vue";
 </script>
 
@@ -12,7 +11,7 @@ import Footer from "./components/Footer.vue";
       <Nav />
     </header>
     <main class="flex-grow flex flex-col justify-center">
-      <Content />
+      <router-view />
     </main>
     <footer>
       <Footer />
