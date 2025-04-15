@@ -233,84 +233,88 @@
                 leave-to="opacity-0 scale-95"
               >
                 <DialogPanel
-                  class="relative w-full max-w-md transform overflow-hidden rounded-2xl bg-white text-left align-middle shadow-xl transition-all"
-                >
-                  <div class="absolute top-4 left-4 flex gap-4 items-center">
-                    <img
-                      :src="persons.pers3"
-                      alt="the arusha trip"
-                      class="w-12 h-12 rounded-full hover:scale-110 transition-transform duration-500"
-                    />
-                    <p
-                      class="font-semibold text-white hover:scale-110 transition-transform duration-500"
-                    >
-                      Person's Name
-                    </p>
+                  class="flex text-blue-950 w-full max-w-4xl transform overflow-hidden rounded-sm bg-white text-left align-middle shadow-xl transition-all"
+                  ><div class="relative">
+                    <div class="absolute top-4 left-4 flex gap-4 items-center">
+                      <img
+                        :src="persons.pers3"
+                        alt="the arusha trip"
+                        class="w-12 h-12 rounded-full hover:scale-110 transition-transform duration-500"
+                      />
+                      <p
+                        class="font-semibold text-white hover:scale-110 transition-transform duration-500"
+                      >
+                        Person's Name
+                      </p>
+                    </div>
+                    <img :src="theImg" class="w-full" />
                   </div>
 
-                  <img :src="theImg" alt="" />
-                  <div class="p-4 flex justify-between items-center">
-                    <p class="font-semibold">01.04.2024</p>
+                  <div>
+                    <div class="p-4 flex justify-between items-center">
+                      <p class="font-semibold">01.04.2024</p>
 
-                    <div class="flex">
-                      <img
-                        :src="persons.pers1"
-                        alt="the arusha trip"
-                        class="z-10 -mr-4 w-8 h-8 rounded-full hover:scale-150 transition-transform duration-500"
-                      />
-                      <img
-                        :src="persons.pers2"
-                        alt="the arusha trip"
-                        class="w-8 h-8 rounded-full hover:scale-150 transition-transform duration-500"
-                      />
-                    </div>
-                  </div>
-                  <div class="pt-1 p-4">
-                    <h3 class="text-lg font-semibold pb-4">Comments</h3>
-                    <div class="flex gap-2 pb-2">
-                      <img
-                        :src="persons.pers4"
-                        alt="the arusha trip"
-                        class="w-8 h-8 rounded-full hover:scale-150 transition-transform duration-500"
-                      />
-                      <div class="flex flex-col">
-                        <p class="text-sm text-black">
-                          Lorem ipsum dolor sit amet, consectetur aSuspendisse
-                          rhoncus metus et ante dictum tempus. Nulla pulvinar
-                          libero ut iaculis interdum.
-                        </p>
-                        <p class="opacity-50 text-sm">02.04.2024</p>
+                      <div class="flex">
+                        <img
+                          :src="persons.pers1"
+                          alt="the arusha trip"
+                          class="z-10 -mr-4 w-8 h-8 rounded-full hover:scale-150 transition-transform duration-500"
+                        />
+                        <img
+                          :src="persons.pers2"
+                          alt="the arusha trip"
+                          class="w-8 h-8 rounded-full hover:scale-150 transition-transform duration-500"
+                        />
                       </div>
                     </div>
-                    <div class="flex gap-2 pb-2">
-                      <img
-                        :src="persons.pers2"
-                        alt="the arusha trip"
-                        class="w-8 h-8 rounded-full hover:scale-150 transition-transform duration-500"
-                      />
-                      <div class="flex flex-col">
-                        <p class="text-sm text-black">
-                          Vestibulum nec condimentum nisi. Mauris id sapien dui.
-                          Morbi nisi ant.
-                        </p>
-                        <p class="opacity-50 text-sm">12.04.2024</p>
+                    <div class="pt-1 p-4">
+                      <h3 class="text-lg font-semibold pb-4">Comments</h3>
+                      <div class="flex gap-2 pb-2">
+                        <img
+                          :src="persons.pers4"
+                          alt="the arusha trip"
+                          class="w-8 h-8 rounded-full hover:scale-150 transition-transform duration-500"
+                        />
+                        <div class="flex flex-col">
+                          <p class="text-sm text-black">
+                            Lorem ipsum dolor sit amet, consectetur aSuspendisse
+                            rhoncus metus et ante dictum tempus. Nulla pulvinar
+                            libero ut iaculis interdum.
+                          </p>
+                          <p class="opacity-50 text-sm">02.04.2024</p>
+                        </div>
+                      </div>
+                      <div class="flex gap-2 pb-2">
+                        <img
+                          :src="persons.pers2"
+                          alt="the arusha trip"
+                          class="w-8 h-8 rounded-full hover:scale-150 transition-transform duration-500"
+                        />
+                        <div class="flex flex-col">
+                          <p class="text-sm text-black">
+                            Vestibulum nec condimentum nisi. Mauris id sapien
+                            dui. Morbi nisi ant.
+                          </p>
+                          <p class="opacity-50 text-sm">12.04.2024</p>
+                        </div>
                       </div>
                     </div>
+                    <form action="" class="flex flex-col gap-2 px-4 w-full">
+                      <p class="text-sm text-black">
+                        Write your comment here...
+                      </p>
+                      <textarea
+                        rows="3"
+                        class="border-1 rounded-lg w-full"
+                      /><button
+                        type="button"
+                        class="max-w-36 inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+                        @click="closeModal"
+                      >
+                        Post
+                      </button>
+                    </form>
                   </div>
-                  <form action="" class="flex flex-col gap-2 px-4 w-full">
-                    <p class="text-sm text-black">Write your comment here...</p>
-                    <textarea
-                      rows="3"
-                      class="border-1 rounded-lg w-full"
-                    /><button
-                      type="button"
-                      class="max-w-36 inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
-                      @click="closeModal"
-                    >
-                      Post
-                    </button>
-                  </form>
-                  <div class="m-8"></div>
                 </DialogPanel>
               </TransitionChild>
             </div>

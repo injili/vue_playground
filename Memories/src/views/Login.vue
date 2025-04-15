@@ -2,7 +2,7 @@
   <div
     class="container mx-auto flex flex-col justify-center items-start w-full px-12 py-8 w-full h-full rounded-lg bg-white/30 backdrop-blur-md shadow-lg"
   >
-    <div class="flex gap-2 flex-col pt-8 w-full">
+    <div class="flex gap-2 flex-col py-2 w-full">
       <p class="text-sm text-blue-950">
         Welcome to Memories. Log into your account here.
       </p>
@@ -38,7 +38,10 @@
         </div>
 
         <p class="text-sm text-blue-950 pt-2">
-          Don't have an account?<span class="underline">Sign Up</span>
+          Don't have an account?
+          <button @click="() => $router.push('/signup')" class="underline">
+            Sign Up
+          </button>
         </p>
       </form>
     </div>
